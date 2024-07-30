@@ -1,4 +1,7 @@
 class Airline < ApplicationRecord
+  extend FriendlyId
+  friendly_id :name, use: %i[slugged finders]
+
   has_many :reviews
 
   def avg_score
