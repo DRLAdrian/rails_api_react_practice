@@ -7,4 +7,8 @@ class Airline < ApplicationRecord
   def avg_score
     reviews.average(:score).round(2).to_f
   end
+
+  def should_generate_new_friendly_id?
+    name_changed?
+  end
 end
