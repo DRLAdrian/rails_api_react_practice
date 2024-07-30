@@ -72,3 +72,5 @@ end
 gem 'friendly_id', '~> 5.5'
 
 gem 'jsonapi-serializer', '~> 2.2'
+
+gem "pry-byebug", "~> 3.10"
